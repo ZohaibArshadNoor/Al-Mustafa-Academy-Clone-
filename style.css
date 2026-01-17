@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contactinfo {
+    height: 60px;
+    background: linear-gradient(to right, rgb(46, 90, 251), rgb(151, 18, 250));
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.contactinfo div {
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    object-fit: contain;
+    margin: 10px;
+}
+
+.nav {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Spacing between icon and text */
+    font-size: 16px;
+    /* Increased text size */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-links li svg {
+    width: 25px;
+    /* Increased icon size */
+    height: 25px;
+    /* Increased icon size */
+    /* transition: all 0.3s ease;    */
+}
+
+.nav-links li:hover {
+    color: #7e22ce;
+    /* Hover color for text */
+    background-color: rgba(0, 0, 0, 0.05);
+    /* Slight background on hover */
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.nav-links li svg:hover {
+    fill: #7e22ce;
+    /* Icon color change on hover */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo div {
+    margin: 5px;
+    padding: 5px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.academy-name {
+    font-weight: 800;
+    background: linear-gradient(to right, #2563eb, #7e22ce);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+}
+
+.tagline {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.apply-now-btn {
+    background: linear-gradient(to right, #2563eb, #7e22ce);
+    color: white;
+    margin-left: 5px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    /* transition: all 0.3s ease; */
+}
+
+.sec-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 250px 200px 250px;
+    gap: 50px;
+    background: linear-gradient(to right, rgb(240, 235, 241), rgb(241, 220, 207));
+    justify-content: space-between;
+}
+
+.sec-a h1 {
+    font-size: 70px;
+    padding: 5px;
+}
+
+.blue {
+    color: rgb(21, 93, 252);
+}
+
+.sec-a p {
+    font-size: 25px;
+    padding: 5px;
+    color: rgb(84, 94, 109);
+}
+
+.sec-a img {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+}
+
+.get-started-btn {
+    background: #2563eb;
+    color: white;
+    margin: 20px 20px 20px 4px;
+    padding: 5px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.courses-section {
+    text-align: center;
+    background: linear-gradient(to right,rgb(244, 248, 253), rgba(217, 237, 243, 0.568));
+    padding: 60px 20px;
+}
+
+.courses-header h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.courses-header span {
+    color: rgb(21, 93, 252);
+}
+
+.category {
+    color: rgb(21, 93, 252);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.course-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    height: 350px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    background-color: #f1f5f9;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon svg,
+.card-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.card a {
+    font-weight: 600;
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #7e22ce;
+}
+
+.view-all-courses a {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-courses a:hover {
+    background-color: #7e22ce;
+}
+
+/* .why-choose {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f1f5f9;
+}
+
+.why-choose h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1e40af;
+    margin-bottom: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.know-more-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.know-more-btn:hover {
+    background-color: #7e22ce;
+} */
