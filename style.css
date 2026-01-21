@@ -6,7 +6,6 @@
 }
 
 .contactinfo {
-    height: 60px;
     background: linear-gradient(to right, rgb(46, 90, 251), rgb(151, 18, 250));
     display: flex;
     padding-left: 150px;
@@ -26,62 +25,115 @@ svg {
     object-fit: contain;
     margin: 10px;
 }
-
+/* ------------------- NAVBAR ------------------- */
 .nav {
-    background-color: white;
     display: flex;
-    padding-left: 150px;
-    padding-right: 150px;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 20px 19px 20px 20px rgba(0, 0, 0, 0.1);
-    
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 15px 50px;
+    background: rgb(255, 254, 255); /* keep gradient */
+    color: rgb(63, 73, 90);
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.academy-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.tagline {
+    margin: 0;
+    font-size: 0.85rem;
 }
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    list-style-type: none;
     gap: 20px;
+    list-style: none;
 }
 
 .nav-links li {
     display: flex;
     align-items: center;
-    gap: 10px;
-    /* Spacing between icon and text */
-    font-size: 16px;
-    /* Increased text size */
-    font-weight: 500;
+    gap: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.nav-links li svg {
+.apply-now-btn {
+    padding: 8px 15px;
+    background: #ff5a5f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ------------------- HAMBURGER ------------------- */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    background-color: rgb(63, 73, 90);
+}
+
+.hamburger span {
+    display: block;
     width: 25px;
-    /* Increased icon size */
-    height: 25px;
-    /* Increased icon size */
-    /* transition: all 0.3s ease;    */
+    height: 3px;
+    background: white; /* can keep gradient if wanted */
+    border-radius: 3px;
 }
 
-.nav-links li:hover {
-    color: #7e22ce;
-    /* Hover color for text */
-    background-color: rgba(0, 0, 0, 0.05);
-    /* Slight background on hover */
-    padding: 10px 20px;
-    border-radius: 25px;
+/* ------------------- MOBILE ACTIVE ------------------- */
+.nav-links.mobile-active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    color: black;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    gap: 15px;
+    z-index: 1000;
 }
 
-.nav-links li svg:hover {
-    fill: #7e22ce;
-    /* Icon color change on hover */
+.nav-links.mobile-active li {
+    justify-content: flex-end;
 }
+
+.nav-links.mobile-active button {
+    align-self: flex-end;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+@media (max-width: 992px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+}
+
 
 .logo {
     display: flex;
@@ -125,64 +177,85 @@ svg {
     cursor: pointer;
     /* transition: all 0.3s ease; */
 }
-
+/* Section A container */
 .sec-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 200px 250px 200px 250px;
-    gap: 50px;
-    background: linear-gradient(to right, rgb(240, 235, 241), rgb(241, 220, 207));
-    justify-content: space-between;
+  padding: 150px 0; /* vertical spacing */
+  gap: 50px; /* space between left and right */
 }
 
+/* Headings */
 .sec-a h1 {
-    font-size: 70px;
-    padding: 5px;
+  font-size: 70px;
+  line-height: 1.1;
 }
 
-.blue {
-    color: rgb(21, 93, 252);
+.sec-a h1.black {
+  color: #000; /* original color */
 }
 
+.sec-a h1.blue {
+  color: #0066ff; /* original blue */
+}
+
+/* Paragraph */
 .sec-a p {
-    font-size: 25px;
-    padding: 5px;
-    color: rgb(84, 94, 109);
+  font-size: 25px;
+  line-height: 1.5;
+  margin-top: 20px;
 }
 
-.sec-a img {
-    width: 550px;
-    height: 550px;
-    border-radius: 50%;
-}
-
+/* Button */
 .get-started-btn {
-    background: #2563eb;
-    color: white;
-    margin: 20px 20px 20px 4px;
-    padding: 5px;
-    border-radius: 12px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s ease;
-    transition: all 0.6s ease;
-    flex-wrap: nowrap;
-    padding-left: 10px;
-    margin-left: 20px;
-    /* border: none;
-    outline: none;
-    box-shadow: none; */
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #0066ff, #00ccff);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s all;
 }
 
 .get-started-btn:hover {
-    background-color: #0045cf;
-    transform: translateY(-6px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
+}
+
+/* SVG inside button */
+.get-started-btn svg {
+  stroke: #fff;
+}
+
+/* Right image */
+.sec-a-img {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 992px) {
+  .sec-a h1 {
+    font-size: 50px;
+  }
+
+  .sec-a p {
+    font-size: 20px;
+  }
+
+  .sec-a-img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .sec-a {
+    padding: 100px 0;
+  }
 }
 
 .courses-section {
@@ -211,13 +284,15 @@ svg {
     margin-bottom: 40px;
 }
 
+/* Updated for responsive layout */
 .course-cards {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     margin-bottom: 40px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .card {
@@ -228,7 +303,8 @@ svg {
     border-radius: 12px;
     padding: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 25%;
+    width: 100%;
+    max-width: 300px; /* controls max width on large screens */
     height: 350px;
     text-align: center;
     transition: all 0.3s ease;
@@ -283,6 +359,7 @@ svg {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+    margin-top: 20px;
 }
 
 .view-all-courses svg {
@@ -293,12 +370,11 @@ svg {
 
 .view-all-courses button {
     display: flex;
-    display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: auto;  /* changed from 500px */
+    max-width: 90%; /* responsive max width */
     background-color: #2563eb;
-    max-width: fit-content;
     color: white;
     padding: 10px 20px;
     font-size: 20px;
@@ -307,7 +383,6 @@ svg {
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     transition: all 0.6s ease;
 }
 
@@ -316,15 +391,15 @@ svg {
     transform: translateY(-6px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
-
 .justification {
     margin: 30px auto;
     max-width: 1200px;
 }
 
+/* Desktop layout */
 .lr {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
 }
@@ -342,6 +417,7 @@ svg {
 .right img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .grey {
@@ -358,18 +434,16 @@ svg {
     padding: 5px;
 }
 
-
-
+/* Info cards */
 .info-card {
     display: flex;
     align-items: flex-start;
     gap: 16px;
     max-width: 600px;
-    margin: 10px;
+    margin: 10px 0;
     padding: 20px;
     background: #f3efef;
     border-radius: 12px;
-    transition: background-color 0.3s ease;
     transition: all 0.6s ease;
 }
 
@@ -389,31 +463,13 @@ svg {
     justify-content: center;
 }
 
-.b {
-    background: #e6f0ff;
-}
+.b { background: #e6f0ff; }
+.b span { background: #2563eb; }
+.g { background: #dbfce7; }
+.g span { background: #00a63e; }
+.p { background: #f3e8ff; }
+.p span { background: #9810fa; }
 
-.b span {
-    background: #2563eb;
-}
-
-.g {
-    background: #dbfce7;
-}
-
-.g span {
-    background: #00a63e;
-}
-
-.p {
-    background: #f3e8ff;
-}
-
-.p span {
-    background: #9810fa;
-}
-
-/* Blue dot inside */
 .icon span {
     width: 16px;
     height: 16px;
@@ -436,13 +492,52 @@ svg {
     color: #475569;
 }
 
-.faq {
-    /* margin: 90px auto;
-        max-width: 800px; */
-    background: linear-gradient(to right, rgb(239, 246, 255), rgb(239, 246, 255));
-    padding: 60px 20px;
-    /* space from screen edges */
+/* Responsive fixes for small screens */
+@media (max-width: 768px) {
+    .lr {
+        flex-direction: column; /* Stack left and right */
+        align-items: center;
+    }
 
+    .left, .right {
+        flex: unset; /* Let them take natural width */
+        width: 100%;
+    }
+
+    .right {
+        justify-content: center; /* Center image */
+        margin-top: 20px;
+    }
+
+    .heading {
+        font-size: 35px; /* Smaller heading for mobile */
+        text-align: center;
+    }
+}
+
+.faq-card {
+    width: 100%; /* take full width of Bootstrap column */
+    max-width: 900px; /* keeps your maximum width for desktop */
+    margin: 20px auto;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 20px; /* slightly reduced padding for small screens */
+    height: 70px; /* keep your original height */
+    transition: background-color 0.3s ease, all 0.6s ease;
+}
+
+@media (max-width: 768px) {
+    .faq-card {
+        padding: 0 15px; /* reduce padding for mobile */
+        height: auto; /* allow height to expand if text wraps */
+    }
+
+    .faq-card p {
+        font-size: 20px; /* smaller text for small screens */
+    }
 }
 
 .top {
@@ -450,28 +545,12 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.top p {
-    margin: 10px;
-}
-
-.faq-card {
-    width: 60%;
-    max-width: 900px;
-    margin: 20px auto;
-
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: #fff;
-    padding: 0 35px;
-    height: 70px;
-
-    transition: background-color 0.3s ease;
-    transition: all 0.6s ease;
+.faq {
+    background: linear-gradient(to right, rgb(239, 246, 255), rgb(239, 246, 255));
+    padding: 60px 20px;
 }
 
 .faq-card:hover {
@@ -485,17 +564,10 @@ svg {
     color: rgb(21, 92, 250);
 }
 
-
 .faq-card p {
     font-size: 25px;
     font-weight: 300;
     color: rgb(16, 46, 68);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .testimonials {
@@ -698,25 +770,20 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* FOOTER */
 .footer {
     background: #000;
     color: #bbb;
-    padding: 60px 40px 20px;
+    padding: 60px 20px 20px;
 }
 
 .footer-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 250px;
-    padding-right: 250px;
-
 }
 
 .footer-box {
-    width: 23%;
-    min-width: 220px;
+    margin-bottom: 30px;
 }
 
 .footer-box h3 {
@@ -741,19 +808,18 @@ body {
 .footer-box ul li a {
     color: #bbb;
     text-decoration: none;
+    text-align: left;
 }
 
 .footer-box ul li a:hover {
     color: #1e90ff;
 }
 
-/* LOGO */
 .logo {
     color: #1e90ff;
     margin-bottom: 10px;
 }
 
-/* SOCIAL ICONS */
 .social a {
     display: inline-block;
     margin-right: 10px;
@@ -763,7 +829,6 @@ body {
     border-radius: 6px;
 }
 
-/* FOOTER BOTTOM */
 .footer-bottom {
     border-top: 1px solid #222;
     margin-top: 40px;
@@ -776,7 +841,6 @@ body {
     color: #1e90ff;
 }
 
-/* BACK TO TOP BUTTON */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -791,4 +855,22 @@ body {
 
 .back-to-top:hover {
     background: #0b5ed7;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .footer-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-box {
+        text-align: center;
+    }
+
+    .social a {
+        margin: 5px;
+    }
 }

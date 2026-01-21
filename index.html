@@ -6,276 +6,351 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-     <div id="top"></div>
-    <div class="contactinfo">
-        <div>
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z" />
+    <div id="top"></div>
+    <div class="contactinfo d-flex flex-column flex-md-row flex-wrap
+            justify-content-center justify-content-md-between
+            align-items-center gap-2 text-center text-md-start">
+
+        <div class="d-flex align-items-center gap-2 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-phone w-3 h-3" aria-hidden="true">
+                <path
+                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+                </path>
             </svg>
-            <p>+92 3253502764</p>
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M11 16v-5.5A3.5 3.5 0 0 0 7.5 7m3.5 9H4v-5.5A3.5 3.5 0 0 1 7.5 7m3.5 9v4M7.5 7H14m0 0V4h2.5M14 7v3m-3.5 6H20v-6a3 3 0 0 0-3-3m-2 9v4m-8-6.5h1" />
-            </svg>
-            <p>zohaibarshadnoor764@gmail.com</p>
+            <p class="m-0">+92 300 1234567</p>
         </div>
-        <div>
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 6H5m2 3H5m2 3H5m2 3H5m2 3H5m11-1a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2M7 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm8 7a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
+
+        <div class="d-flex align-items-center gap-2 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-mail w-3 h-3" aria-hidden="true">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
             </svg>
-            <p>Karachi, Pakistan</p>
+            <p class="m-0">info@email.com</p>
         </div>
+
+        <div class="d-flex align-items-center gap-2 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-map-pin w-3 h-3" aria-hidden="true">
+                <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                </path>
+                <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <p class="m-0">Karachi, Pakistan</p>
+        </div>
+
     </div>
 
+
     <nav class="nav">
+        <!-- LOGO AND NAME -->
         <div class="logo">
-
             <img src="images/logo.png" alt="Logo">
-
             <div>
                 <p class="academy-name">AL-Mustafa Academy</p>
                 <p class="tagline">Excellence in Education</p>
             </div>
         </div>
 
-        <ul class="nav-links">
-            <li><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5" />
-                </svg> Home</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <!-- HAMBURGER ICON -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- NAV LINKS -->
+        <ul class="nav-links" id="nav-links">
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-house w-4 h-4" aria-hidden="true">
+                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                    <path
+                        d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+                    </path>
+                </svg>Home
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-users w-4 h-4" aria-hidden="true">
                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                     <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                     <circle cx="9" cy="7" r="4"></circle>
-                </svg> About</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                </svg> About
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-book-open w-4 h-4" aria-hidden="true">
                     <path d="M12 7v14"></path>
                     <path
                         d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
                     </path>
-                </svg> Courses</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                </svg> Courses
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-images w-4 h-4" aria-hidden="true">
                     <path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16"></path>
                     <path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2"></path>
                     <circle cx="13" cy="7" r="1" fill="currentColor"></circle>
                     <rect x="8" y="2" width="14" height="14" rx="2"></rect>
-                </svg> Gallery</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                </svg> Gallery
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-contact w-4 h-4" aria-hidden="true">
                     <path d="M16 2v2"></path>
                     <path d="M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"></path>
                     <path d="M8 2v2"></path>
                     <circle cx="12" cy="11" r="3"></circle>
                     <rect x="3" y="4" width="18" height="18" rx="2"></rect>
-                </svg> Contact</li>
+                </svg> Contact
+            </li>
             <button class="apply-now-btn">Apply Now</button>
         </ul>
     </nav>
 
-    <div class="sec-a">
-        <div class="left">
-            <h1 class="black">Building Skills</h1>
-            <h1 class="blue">For a Successfull</h1>
-            <h1 class="blue">Future.</h1>
-            <p>We help students build practical digital <br> skills, boost confidence, and grow with <br>hands-on
-                learning in a supportive <br>environment.</p>
-            <button class="get-started-btn">
-                Get Started Today
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                </svg>
-            </button>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
 
-        </div>
-        <div class="right">
-            <img src="Images/School.png" alt="School Image">
-        </div>
-    </div>
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("mobile-active");
+        });
+    </script>
 
-    <div class="courses-section">
-        <div class="courses-header">
-            <p class="category">Course Categories</p>
-            <h2>Popular Courses <span class="blue">To Learn</span></h2>
-        </div>
+    <!-- Section A -->
+    <section class="sec-a">
+        <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between px-4 px-lg-5">
 
-        <path d="M5 12h14"></path>
-        <path d="m12 5 7 7-7 7"></path>
-
-        <div class="course-cards">
-            <div class="card">
-                <div class="card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-code w-8 h-8" aria-hidden="true">
-                        <path d="m16 18 6-6-6-6"></path>
-                        <path d="m8 6-6 6 6 6"></path>
-                    </svg>
-                </div>
-                <h3>Web Development Basics</h3>
-                <p>Building modern and responsive websites</p>
-                <a href="#">Learn More &gt;</a>
-            </div>
-            <div class="card">
-                <div class="card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-code w-8 h-8" aria-hidden="true">
-                        <path d="m16 18 6-6-6-6"></path>
-                        <path d="m8 6-6 6 6 6"></path>
-                    </svg>
-                </div>
-                <h3>Modern Web Development (MERN)</h3>
-                <p>MERN-stack development with MongoDB, Express, React, and Node.js</p>
-                <a href="#">Learn More &gt;</a>
-            </div>
-            <div class="card">
-                <div class="card-icon">
-                    <svg ; xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-code w-8 h-8" aria-hidden="true">
-                        <path d="m16 18 6-6-6-6"></path>
-                        <path d="m8 6-6 6 6 6"></path>
-
-                    </svg>
-                </div>
-                <h3>Microsoft Office</h3>
-                <p>Microsoft Word, Excel, PowerPoint, and more</p>
-                <a href="#">Learn More &gt;</a>
-            </div>
-        </div>
-
-        <div class="view-all-courses">
-            <button>
+            <!-- Left content -->
+            <div class="left text-center text-lg-start mb-4 mb-lg-0">
+                <h1 class="black">Building Skills</h1>
+                <h1 class="blue">For a Successful</h1>
+                <h1 class="blue">Future.</h1>
                 <p>
-                    View All Courses
+                    We help students build practical digital <br>
+                    skills, boost confidence, and grow with <br>
+                    hands-on learning in a supportive <br>
+                    environment.
                 </p>
-                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                <button class="get-started-btn">
+                    Get Started Today
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Right image -->
+            <div class="right d-flex justify-content-center justify-content-lg-end">
+                <img src="Images/School.png" alt="School Image" class="img-fluid sec-a-img">
+            </div>
+
+        </div>
+    </section>
+
+
+   <div class="courses-section">
+    <div class="courses-header">
+        <p class="category">Course Categories</p>
+        <h2>Popular Courses <span class="blue">To Learn</span></h2>
+    </div>
+
+    <div class="course-cards">
+        <div class="card">
+            <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-code w-8 h-8" aria-hidden="true">
+                    <path d="m16 18 6-6-6-6"></path>
+                    <path d="m8 6-6 6 6 6"></path>
                 </svg>
-            </button>
+            </div>
+            <h3>Web Development Basics</h3>
+            <p>Building modern and responsive websites</p>
+            <a href="#">Learn More &gt;</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-code w-8 h-8" aria-hidden="true">
+                    <path d="m16 18 6-6-6-6"></path>
+                    <path d="m8 6-6 6 6 6"></path>
+                </svg>
+            </div>
+            <h3>Modern Web Development (MERN)</h3>
+            <p>MERN-stack development with MongoDB, Express, React, and Node.js</p>
+            <a href="#">Learn More &gt;</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-code w-8 h-8" aria-hidden="true">
+                    <path d="m16 18 6-6-6-6"></path>
+                    <path d="m8 6-6 6 6 6"></path>
+                </svg>
+            </div>
+            <h3>Microsoft Office</h3>
+            <p>Microsoft Word, Excel, PowerPoint, and more</p>
+            <a href="#">Learn More &gt;</a>
         </div>
     </div>
 
-    <div class="justification">
-        <p class="grey">WHO WE ARE</p>
-        <p class="heading">
-            Why Choose <span class="blue">AL-Mustafa <br> Academy?</span>
-        </p>
-
-        <div class="lr">
-            <!-- LEFT CONTENT -->
-            <div class="left">
-                <div class="info-card">
-                    <div class="icon b"><span></span></div>
-                    <div class="content">
-                        <h3>Expert Instructors</h3>
-                        <p>
-                            Our courses are taught by experienced teachers who know their field well.
-                            They share practical knowledge and guide students step by step to succeed
-                            in real work.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="info-card">
-                    <div class="icon g"><span></span></div>
-                    <div class="content">
-                        <h3>Career Opportunities</h3>
-                        <p>
-                            We help students gain the skills and knowledge needed for good jobs.
-                            Our training and support prepare every student for success.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="info-card">
-                    <div class="icon p"><span></span></div>
-                    <div class="content">
-                        <h3>Student Community</h3>
-                        <p>
-                            Join a friendly community of students who learn, share, and grow together.
-                            Make connections that last beyond the classroom.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- RIGHT IMAGE -->
-            <div class="right">
-                <img src="images/FAQs.jpg" alt="FAQ Image">
-            </div>
-        </div>
-
-        <button class="get-started-btn">
-            Know About Us
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
+    <div class="view-all-courses">
+        <button>
+            <p>View All Courses</p>
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
         </button>
     </div>
+</div>
 
-    <div class="faq">
-        <div class="top">
-            <p class="grey">WHO WE ARE</p>
-            <p class="heading">
-                Find Helpful Answer Here </span>
-            </p>
+
+<div class="justification">
+    <p class="grey">WHO WE ARE</p>
+    <p class="heading">
+        Why Choose <span class="blue">AL-Mustafa <br> Academy?</span>
+    </p>
+
+    <div class="lr">
+        <!-- LEFT CONTENT -->
+        <div class="left">
+            <div class="info-card">
+                <div class="icon b"><span></span></div>
+                <div class="content">
+                    <h3>Expert Instructors</h3>
+                    <p>
+                        Our courses are taught by experienced teachers who know their field well.
+                        They share practical knowledge and guide students step by step to succeed
+                        in real work.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="icon g"><span></span></div>
+                <div class="content">
+                    <h3>Career Opportunities</h3>
+                    <p>
+                        We help students gain the skills and knowledge needed for good jobs.
+                        Our training and support prepare every student for success.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="icon p"><span></span></div>
+                <div class="content">
+                    <h3>Student Community</h3>
+                    <p>
+                        Join a friendly community of students who learn, share, and grow together.
+                        Make connections that last beyond the classroom.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="faq-card">
-            <p>What courses do we offer?</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-chevron-down w-4 h-4 lg:w-5 lg:h-5 text-gray-500 flex-shrink-0 transition-transform duration-300"
-                aria-hidden="true">
-                <path d="m6 9 6 6 6-6"></path>
-            </svg>
-        </div>
-        <div class="faq-card">
-            <p>What courses do we offer?</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-chevron-down w-4 h-4 lg:w-5 lg:h-5 text-gray-500 flex-shrink-0 transition-transform duration-300"
-                aria-hidden="true">
-                <path d="m6 9 6 6 6-6"></path>
-            </svg>
-        </div>
-        <div class="faq-card">
-            <p>What courses do we offer?</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-chevron-down w-4 h-4 lg:w-5 lg:h-5 text-gray-500 flex-shrink-0 transition-transform duration-300"
-                aria-hidden="true">
-                <path d="m6 9 6 6 6-6"></path>
-            </svg>
-        </div>
-        <div class="faq-card">
-            <p>What courses do we offer?</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-chevron-down w-4 h-4 lg:w-5 lg:h-5 text-gray-500 flex-shrink-0 transition-transform duration-300"
-                aria-hidden="true">
-                <path d="m6 9 6 6 6-6"></path>
-            </svg>
+
+        <!-- RIGHT IMAGE -->
+        <div class="right">
+            <img src="images/FAQs.jpg" alt="FAQ Image">
         </div>
     </div>
+
+    <button class="get-started-btn">
+        Know About Us
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+        </svg>
+    </button>
+</div>
+
+<div class="faq container">
+    <div class="top text-center">
+        <p class="grey">WHO WE ARE</p>
+        <p class="heading">
+            Find Helpful Answer Here
+        </p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 mb-3">
+            <div class="faq-card d-flex justify-content-between align-items-center">
+                <p>What courses do we offer?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down w-4 h-4 lg:w-5 lg:h-5 text-gray-500 flex-shrink-0 transition-transform duration-300"
+                    aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 mb-3">
+            <div class="faq-card d-flex justify-content-between align-items-center">
+                <p>What courses do we offer?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down w-4 h-4 lg:w-5 lg:h-5 text-gray-500 flex-shrink-0 transition-transform duration-300"
+                    aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 mb-3">
+            <div class="faq-card d-flex justify-content-between align-items-center">
+                <p>What courses do we offer?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down w-4 h-4 lg:w-5 lg:h-5 text-gray-500 flex-shrink-0 transition-transform duration-300"
+                    aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 mb-3">
+            <div class="faq-card d-flex justify-content-between align-items-center">
+                <p>What courses do we offer?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down w-4 h-4 lg:w-5 lg:h-5 text-gray-500 flex-shrink-0 transition-transform duration-300"
+                    aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
 
     <section class="testimonials">
         <div class="container">
@@ -350,10 +425,12 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-wrapper">
+   <footer class="footer">
+    <div class="container">
+        <div class="row footer-wrapper">
 
-            <div class="footer-box">
+            <!-- LOGO & ABOUT -->
+            <div class="col-lg-3 col-md-6 footer-box">
                 <h2 class="logo">AI</h2>
                 <p>
                     AI Mustafa Academy is committed to quality education and holistic
@@ -367,7 +444,7 @@
             </div>
 
             <!-- COURSES -->
-            <div class="footer-box">
+            <div class="col-lg-3 col-md-6 footer-box">
                 <h3>OUR COURSES</h3>
                 <ul>
                     <li><a href="#">Web Development Basics</a></li>
@@ -380,7 +457,7 @@
             </div>
 
             <!-- EXPLORE -->
-            <div class="footer-box">
+            <div class="col-lg-3 col-md-6 footer-box">
                 <h3>EXPLORE</h3>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -390,30 +467,31 @@
                 </ul>
             </div>
 
-            <!-- CONTACT -->
-            <div class="footer-box">
+            <!-- CONTACT INFO -->
+            <div class="col-lg-3 col-md-6 footer-box">
                 <h3>CONTACT INFO</h3>
-                <p><i class="fas fa-location-dot"></i> Al-Mustafa Academy, Flat No. 204, Block B, Al Ramzan Terrace
-                    Garden West, Karachi.</p>
-                <p><i class="fas fa-phone"></i> +92 324 2513101</p>
-                <p><i class="fas fa-envelope"></i> mohammadsadal786.92@gmail.com</p>
+                <p><i class="fas fa-location-dot"></i> Al-Mustafa Academy, Flat No. 204, Block B, Al Ramzan Terrace, Garden West, Karachi.</p>
+                <p><i class="fas fa-phone"></i> +92 92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> info@email.com</p>
             </div>
 
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-bottom mt-4">
             <p>Copyright © 2026 <span>AL-Mustafa Academy</span>. All Rights Reserved</p>
         </div>
-    </footer>
+    </div>
 
     <!-- BACK TO TOP BUTTON -->
     <a href="#top" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
+</footer>
 
-    </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
